@@ -11,11 +11,11 @@ datasource db {
 }
 
 model profile {
-  id   Int    @id @default(auto()) @map("_id") @db.ObjectId
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
   user String @unique
 }
 
 model top {
-  id   Int    @id @default(auto()) @map("_id") @db.ObjectId
+  id   String @id @default(auto()) @map("_id") @db.ObjectId
   user String @unique
 }
